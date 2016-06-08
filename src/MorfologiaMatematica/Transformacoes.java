@@ -17,6 +17,8 @@ import java.awt.*;
 import static java.awt.image.ImageObserver.ALLBITS;
 import javax.swing.filechooser.*;
 
+import com.apmcommunity.compuware.AWTAgent;
+
 public class Transformacoes extends javax.swing.JFrame {
      BufferedImage imagem1;
      int flag=0;
@@ -317,6 +319,9 @@ public class Transformacoes extends javax.swing.JFrame {
      * @param args the command line arguments
      */
     public static void main(String args[]) {
+        // ADK ///////////////////////////////////////////////////////////////
+        AWTAgent.initialize();
+        // ADK ///////////////////////////////////////////////////////////////
     	
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
